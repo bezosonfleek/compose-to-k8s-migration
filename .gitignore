@@ -1,0 +1,12 @@
+# secrets
+.env
+*.env
+!.env.example
+*.pem
+*.key
+kubeconfig*
+*.kubeconfig
+
+# misc
+.DS_Store
+*.swp
