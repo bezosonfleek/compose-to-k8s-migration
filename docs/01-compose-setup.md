@@ -50,8 +50,8 @@ docker compose ps
 - `curl -sI http://localhost:18080` returned `HTTP/1.1 200 OK` (Werkzeug/Python 3.11).
 - Also reachable via the host's public IP.
 - All five containers up; redis and db report healthy.
-- Worker log: FILL
-- Vote cast on :18080 appeared on :18081: FILL yes/no
+- Worker log shows votes being consumed from Redis and written to Postgres (`Processing vote for 'a' by '<voter_id>'`). A repeat voter changing their choice is handled as an update.
+- Vote cast on :18080 appeared on :18081: yes
 
 ## Findings (feed into the audit)
 1. **This is a dev setup.** `result` runs `nodemon --inspect` and publishes a debugger on `127.0.0.1:9229`; `vote` uses the `dev` build target with `watchdog`. A production migration should build the production targets and drop the debugger.
