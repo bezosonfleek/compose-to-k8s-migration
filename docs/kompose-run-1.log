@@ -1,0 +1,24 @@
+[33mWARN[0m Service "db" won't be created because 'ports' is not specified 
+[33mWARN[0m File don't exist or failed to check if the directory is empty: stat :/var/lib/postgresql/data: no such file or directory 
+[33mWARN[0m File don't exist or failed to check if the directory is empty: stat /home/bezos/github/compose-to-k8s-migration/legacy-compose/healthchecks: no such file or directory 
+[33mWARN[0m Volume mount on the host "/home/bezos/github/compose-to-k8s-migration/legacy-compose/healthchecks" isn't supported - ignoring path on the host 
+[33mWARN[0m Service "redis" won't be created because 'ports' is not specified 
+[33mWARN[0m File don't exist or failed to check if the directory is empty: stat /home/bezos/github/compose-to-k8s-migration/legacy-compose/healthchecks: no such file or directory 
+[33mWARN[0m Volume mount on the host "/home/bezos/github/compose-to-k8s-migration/legacy-compose/healthchecks" isn't supported - ignoring path on the host 
+[33mWARN[0m File don't exist or failed to check if the directory is empty: stat /home/bezos/github/compose-to-k8s-migration/legacy-compose/result: no such file or directory 
+[33mWARN[0m Volume mount on the host "/home/bezos/github/compose-to-k8s-migration/legacy-compose/result" isn't supported - ignoring path on the host 
+[33mWARN[0m File don't exist or failed to check if the directory is empty: stat /home/bezos/github/compose-to-k8s-migration/legacy-compose/vote: no such file or directory 
+[33mWARN[0m Volume mount on the host "/home/bezos/github/compose-to-k8s-migration/legacy-compose/vote" isn't supported - ignoring path on the host 
+[33mWARN[0m Service "worker" won't be created because 'ports' is not specified 
+[36mINFO[0m Kubernetes file "k8s-kompose/result-service.yaml" created 
+[36mINFO[0m Kubernetes file "k8s-kompose/vote-service.yaml" created 
+[36mINFO[0m Kubernetes file "k8s-kompose/db-deployment.yaml" created 
+[36mINFO[0m Kubernetes file "k8s-kompose/db-data-persistentvolumeclaim.yaml" created 
+[36mINFO[0m Kubernetes file "k8s-kompose/db-claim1-persistentvolumeclaim.yaml" created 
+[36mINFO[0m Kubernetes file "k8s-kompose/redis-deployment.yaml" created 
+[36mINFO[0m Kubernetes file "k8s-kompose/redis-claim0-persistentvolumeclaim.yaml" created 
+[36mINFO[0m Kubernetes file "k8s-kompose/result-deployment.yaml" created 
+[36mINFO[0m Kubernetes file "k8s-kompose/result-claim0-persistentvolumeclaim.yaml" created 
+[36mINFO[0m Kubernetes file "k8s-kompose/vote-deployment.yaml" created 
+[36mINFO[0m Kubernetes file "k8s-kompose/vote-claim0-persistentvolumeclaim.yaml" created 
+[36mINFO[0m Kubernetes file "k8s-kompose/worker-deployment.yaml" created 
