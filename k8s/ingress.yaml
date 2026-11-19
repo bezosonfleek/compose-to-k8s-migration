@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: voting
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: vote.102.212.244.178.nip.io
+      http:
+        paths:
+          - {path: /, pathType: Prefix, backend: {service: {name: vote, port: {name: http}}}}
+    - host: result.102.212.244.178.nip.io
+      http:
+        paths:
+          - {path: /, pathType: Prefix, backend: {service: {name: result, port: {name: http}}}}
